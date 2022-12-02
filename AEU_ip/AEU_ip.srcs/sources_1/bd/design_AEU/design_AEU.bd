@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2015.1" bd:top="design_AEU" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_AEU</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_AEU_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>S</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>2</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>A</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>B</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_AEU_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>c_addsub_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="c_addsub" spirit:vendor="xilinx.com" spirit:version="12.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_AEU_c_addsub_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="A_Type">Signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="B_Type">Signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="A_Width">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="B_Width">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Add_Mode">Add_Subtract</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Out_Width">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Latency_Configuration">Automatic</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Latency">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="B_Value">0000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CE">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SCLR">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SSET">false</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>mult_gen_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="mult_gen" spirit:vendor="xilinx.com" spirit:version="12.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_AEU_mult_gen_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PortAType">Signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PortAWidth">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PortBType">Signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PortBWidth">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Multiplier_Construction">Use_Mults</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ClockEnable">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SyncClear">false</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>decision_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="decision" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_AEU_decision_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>output_extender_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="output_extender" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_AEU_output_extender_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>decision_0_ADD_SUB</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="ADD_SUB"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="ADD"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decision_0_B_OUT_MUL</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="B_OUT_MUL"/>
+        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decision_0_A_OUT_MUL</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="A_OUT_MUL"/>
+        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decision_0_B_OUT_ADD</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="B_OUT_ADD"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>decision_0_A_OUT_ADD</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="A_OUT_ADD"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>S_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="S"/>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="S"/>
+        <spirit:internalPortReference spirit:componentRef="output_extender_0" spirit:portRef="Sel"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A"/>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B"/>
+        <spirit:internalPortReference spirit:componentRef="decision_0" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>c_addsub_0_S</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="S"/>
+        <spirit:internalPortReference spirit:componentRef="output_extender_0" spirit:portRef="ADD_SUB_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mult_gen_0_P</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="P"/>
+        <spirit:internalPortReference spirit:componentRef="output_extender_0" spirit:portRef="MULT_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>output_extender_0_Y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="output_extender_0" spirit:portRef="Y"/>
+        <spirit:externalPortReference spirit:portRef="Y"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>
