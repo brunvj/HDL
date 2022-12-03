@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity output_extender
+ERROR: [VRFC 10-91] temp_in1 is not declared [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:48]
+ERROR: [VRFC 10-91] temp_in2 is not declared [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:49]
+ERROR: [VRFC 10-91] temp_in1 is not declared [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:55]
+ERROR: [VRFC 10-91] temp_in1 is not declared [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:58]
+ERROR: [VRFC 10-91] temp_in2 is not declared [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:61]
+ERROR: [VRFC 10-397] cannot assign null waveform to non-guarded signal [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:64]
+ERROR: [VRFC 10-91] temp_in1 is not declared [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:45]
+ERROR: [VRFC 10-146] y with mode 'out' cannot be read [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:45]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd:41]
+INFO: [VRFC 10-240] VHDL file C:/Users/User/AppData/Roaming/Xilinx/Vivado/extend_out_IP/extend_out_IP.srcs/sources_1/new/output_extender.vhd ignored due to errors
